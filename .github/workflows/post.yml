@@ -27,13 +27,11 @@ jobs:
           python-version: "3.11"
       - run: pip install -r requirements.txt
 
-      - name: Write configs from secrets
+      - name: Write IG config from secret
         env:
           IG_CONFIG: ${{ secrets.IG_CONFIG }}
-          WP_CONFIG: ${{ secrets.WP_CONFIG }}
         run: |
           printf '%s' "$IG_CONFIG" > .ig_config.json
-          printf '%s' "$WP_CONFIG" > .wp_config.json
 
       - name: Post due IG outputs
         run: python cloud_post.py

@@ -26,12 +26,11 @@ git remote add origin https://github.com/YOURNAME/habbinson-poster.git
 git push -u origin main
 ```
 
-### 3. Add two secrets
+### 3. Add one secret
 In the repo: **Settings → Secrets and variables → Actions → New repository secret**. Create:
 - **`IG_CONFIG`** → paste the entire contents of `D:\Claude\Kids\Communication\Code\.ig_config.json`
-- **`WP_CONFIG`** → paste the entire contents of `D:\Claude\Kids\Communication\Code\.wp_config.json`
 
-(These hold your Instagram token + WordPress app-password. GitHub encrypts them; they're written to files only at runtime and are **never committed** — see `.gitignore`.)
+That's it — no WordPress secret needed. Blogs are scheduled directly on WordPress; videos are served from this public GitHub repo. GitHub encrypts the secret; it's written to a file only at runtime and is **never committed** — see `.gitignore`.
 
 ### 4. Enable + test
 - Go to the **Actions** tab → if prompted, click **"I understand my workflows, enable them."**

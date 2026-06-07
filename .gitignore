@@ -1,6 +1,6 @@
-# secrets are injected at runtime from GitHub Actions secrets — never commit them
-.ig_config.json
-.wp_config.json
+# secrets — never commit
+.ig_config.json   # injected at runtime from IG_CONFIG secret
+.wp_config.json   # not used in cloud poster; kept here as a safety net
 .yt_config.json
 __pycache__/
 *.pyc
