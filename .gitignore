@@ -1,0 +1,6 @@
+# secrets are injected at runtime from GitHub Actions secrets — never commit them
+.ig_config.json
+.wp_config.json
+.yt_config.json
+__pycache__/
+*.pyc
