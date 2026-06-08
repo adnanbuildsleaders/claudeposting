@@ -1,6 +1,8 @@
-# secrets — never commit
-.ig_config.json   # injected at runtime from IG_CONFIG secret
-.wp_config.json   # not used in cloud poster; kept here as a safety net
+# secrets — never commit (comments MUST be on their own line; inline comments break the pattern)
+# .ig_config.json is injected at runtime from the IG_CONFIG secret
+.ig_config.json
+# .wp_config.json / .yt_config.json not used in cloud, kept out as a safety net
+.wp_config.json
 .yt_config.json
 __pycache__/
 *.pyc
