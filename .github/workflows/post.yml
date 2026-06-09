@@ -1,13 +1,19 @@
 name: Habbinson IG auto-poster
 
-# Fires at 10:00, 13:00, 17:00 IST  (= 04:30, 07:30, 11:30 UTC).
-# GitHub cron can be delayed a few minutes under load — that's fine, the post_at gate
-# only posts when IST time has reached each blog's slot.
+# Our slots (avoid the 10AM/5PM IST slots used by the other poster):
+#   NEW posts  -> 14:00 & 20:00 IST  (= 08:30 & 14:30 UTC)
+#   BACKLOG    -> 23:00 IST          (= 17:30 UTC)
+# Each slot has a +1h catch-up cron because GitHub schedules can be delayed/skipped under load;
+# the post_at gate makes extra runs harmless (they post only what's actually due).
 on:
   schedule:
-    - cron: "30 4 * * *"
-    - cron: "30 7 * * *"
-    - cron: "30 11 * * *"
+    - cron: "30 8 * * *"     # 14:00 IST  (new slot 1)
+    - cron: "30 9 * * *"     # 14:30 IST  catch-up
+    - cron: "30 14 * * *"    # 20:00 IST  (new slot 2)
+    - cron: "30 15 * * *"    # 20:30 IST  catch-up
+    - cron: "30 17 * * *"    # 23:00 IST  (backlog)
+    - cron: "30 18 * * *"    # 23:30 IST  catch-up
+    - cron: "30 20 * * *"    # 02:00 IST  final catch-up
   workflow_dispatch: {}        # lets you run it manually from the Actions tab
 
 permissions:
