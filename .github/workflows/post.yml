@@ -1,19 +1,14 @@
 name: Habbinson IG auto-poster
 
-# Our slots (avoid the 10AM/5PM IST slots used by the other poster):
-#   NEW posts  -> 14:00 & 20:00 IST  (= 08:30 & 14:30 UTC)
-#   BACKLOG    -> 23:00 IST          (= 17:30 UTC)
-# Each slot has a +1h catch-up cron because GitHub schedules can be delayed/skipped under load;
-# the post_at gate makes extra runs harmless (they post only what's actually due).
+# Slots: NEW posts -> 14:00 & 20:00 IST, BACKLOG -> 23:00 IST (set per-item in post_at).
+# GitHub scheduled runs are frequently DELAYED/DROPPED under load (we saw 8-12h drift), so instead
+# of firing only at the slots we POLL every 30 minutes, all day. The post_at gate makes this fully
+# idempotent: each item posts exactly once, at/after its slot, and never double-posts. Public repo
+# => unlimited Actions minutes, so frequent polling is free and the most reliable PC-off option.
 on:
   schedule:
-    - cron: "30 8 * * *"     # 14:00 IST  (new slot 1)
-    - cron: "30 9 * * *"     # 14:30 IST  catch-up
-    - cron: "30 14 * * *"    # 20:00 IST  (new slot 2)
-    - cron: "30 15 * * *"    # 20:30 IST  catch-up
-    - cron: "30 17 * * *"    # 23:00 IST  (backlog)
-    - cron: "30 18 * * *"    # 23:30 IST  catch-up
-    - cron: "30 20 * * *"    # 02:00 IST  final catch-up
+    - cron: "*/30 * * * *"   # every 30 min (poll; post_at decides what actually posts)
+  workflow_dispatch: {}
   workflow_dispatch: {}        # lets you run it manually from the Actions tab
 
 permissions:
