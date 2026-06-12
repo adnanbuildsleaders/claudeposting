@@ -16,7 +16,18 @@ tr = R.load()
 S.maybe_refresh()
 
 acts = R.due_actions(tr)
-print("due IG actions: %d" % len(acts), flush=True)
+
+# Anti-flood cap: post at most ONE blog per run (its Story + Reel), oldest slot first.
+# The */30 cron then drips one blog every ~30 min instead of dumping a whole backlog at
+# once. Idempotent + self-correcting: even if cron clusters, each run clears just one blog.
+if acts:
+    def _when(slug):
+        e = tr.get(slug, {})
+        return e.get("post_at") or e.get("scheduled_dt") or "9999"
+    oldest = min({s for s, _ in acts}, key=_when)
+    acts = [(s, k) for (s, k) in acts if s == oldest]
+
+print("due IG actions (capped to 1 blog/run): %d" % len(acts), flush=True)
 
 for i, (slug, kind) in enumerate(acts):
     ok, info = R.run_action(slug, kind, tr)

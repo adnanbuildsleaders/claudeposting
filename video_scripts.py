@@ -166,6 +166,38 @@ REEL_CAPTIONS = {
 }
 
 
+
+# ---- June-8 famous-person blogs: register so the cloud IG poster recognizes them ----
+# (videos are pre-built in assets/<slug>.mp4; YouTube Shorts pre-scheduled via publishAt.)
+_JUN08_META = {
+  'late-talking-child': ('sky', 'Late Talking Child? The Lesson Hidden in Einstein'),
+  'your-restless-child-is-gifted': ('lime', 'Restless Child? The Hidden Gift Sachin Almost Lost'),
+  'help-a-child-who-stammers': ('coral', 'Child Who Stammers? The Hrithik Roshan Lesson'),
+  'dyslexia-is-not-a-weakness': ('sunny', "Dyslexia in Children: Why a 'Weak' Student Can Win Big"),
+  'encourage-curiosity-in-kids': ('grape', "Curiosity in Children: Stop Saying 'Because I Said So'"),
+  'why-boredom-is-good-for-kids': ('mint', 'Why Boredom Is Good for Kids (And Builds Creativity)'),
+  'raise-an-opportunity-spotter': ('sky', 'Raise an Entrepreneur: Teach Your Child to Spot Opportunity'),
+  'public-speaking-for-kids': ('grape', 'Public Speaking for Kids: Raise a Child Who Holds the Room'),
+  'raise-a-child-who-loves-reading': ('sky', 'Raise a Child Who Loves Reading (Like Bill Gates)'),
+  'believe-in-your-child': ('coral', "Believe in Your Child When the World Says 'Too Small'"),
+}
+for _jslug, (_jpal, _jtitle) in _JUN08_META.items():
+    SCRIPTS[_jslug] = dict(palette=_jpal, final_slug=_jslug, title=_jtitle)
+
+REEL_CAPTIONS.update({
+  'late-talking-child': "Is your child a late talker? Einstein spoke late too. Here's how to help a late talking child start speaking — 3 simple, science-backed steps any parent can use at home today. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share this with a parent who needs it. #latetalker #toddlertalk #speechdelay #parentingtips #raisealeader #adnanbuildsleaders #toddlermilestones #kidscommunication #parentinghacks #earlychildhood\n\nDon't just raise a child — raise a leader.",
+  'your-restless-child-is-gifted': "Got a restless, high-energy child who can't sit still? It might be their biggest gift. Sachin Tendulkar was a restless kid too — here's how to channel that energy into focus and confidence. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share with a tired parent! #restlesschild #highenergykids #parentingtips #raisealeader #adnanbuildsleaders #activekids #channeltheenergy #toddlerlife #parentinghacks #sachintendulkar\n\nDon't just raise a child — raise a leader.",
+  'help-a-child-who-stammers': "Worried about a child who stammers or stutters? Hrithik Roshan stammered as a kid too. Here's what really helps a stuttering child speak with confidence — and the well-meaning mistakes to avoid. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #childwhostammers #stuttering #speechtherapy #parentingtips #raisealeader #adnanbuildsleaders #kidsconfidence #communicationskills #hrithikroshan #speechconfidence\n\nDon't just raise a child — raise a leader.",
+  'dyslexia-is-not-a-weakness': "Does your child struggle with reading? Dyslexia in children is NOT low intelligence — Richard Branson is dyslexic and built an empire. Here's how to turn a struggling reader's brain into a strength. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #dyslexia #strugglingreader #dyslexicthinking #parentingtips #raisealeader #adnanbuildsleaders #learningdifferences #raiseanentrepreneur #richardbranson #neurodiversity\n\nDon't just raise a child — raise a leader.",
+  'encourage-curiosity-in-kids': "Tired of your child's endless 'why' questions? That curiosity is a superpower. Leonardo da Vinci never stopped asking why — here's how to feed your child's curiosity instead of shutting it down. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #curiouskids #curiosity #raisealeader #parentingtips #adnanbuildsleaders #kidslearning #askwhy #davinci #raiseathinker #earlylearning\n\nDon't just raise a child — raise a leader.",
+  'why-boredom-is-good-for-kids': "Should you let your child be bored? YES. J.K. Rowling dreamed up Harry Potter bored on a train. Here's why boredom is good for kids and builds creativity — and what to do instead of grabbing a screen. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #boredom #boredkids #creativity #parentingtips #raisealeader #adnanbuildsleaders #screenfree #letthemplay #jkrowling #imaginativeplay\n\nDon't just raise a child — raise a leader.",
+  'raise-an-opportunity-spotter': "Want to raise an entrepreneur? Dhirubhai Ambani started with almost nothing and built an empire. Here's how to teach your child to spot opportunity and create value — starting young. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #raiseanentrepreneur #entrepreneurkids #moneyskills #parentingtips #raisealeader #adnanbuildsleaders #futureskills #kidsbusiness #dhirubhaiambani #opportunity\n\nDon't just raise a child — raise a leader.",
+  'public-speaking-for-kids': "Got a bright child who won't speak up? Public speaking for kids is a learnable skill. Oprah was speaking to audiences by age 3 — here's how to raise a child who can hold a room. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #publicspeaking #confidentkids #communicationskills #parentingtips #raisealeader #adnanbuildsleaders #shychild #kidsconfidence #oprah #speakup\n\nDon't just raise a child — raise a leader.",
+  'raise-a-child-who-loves-reading': "Want to raise a child who loves reading in a world of screens? Bill Gates devoured books as a kid. Here's how to grow a reader — and why early reading shapes the brain. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #raiseareader #kidsreading #readinghabit #parentingtips #raisealeader #adnanbuildsleaders #readaloud #earlyliteracy #billgates #booksforkids\n\nDon't just raise a child — raise a leader.",
+  'believe-in-your-child': "When the world says your child is 'too small' or 'not enough,' believe in them anyway. Messi was told he was too small. Here's how to build unshakeable self-belief in kids. Follow @adnanbuildsleaders for daily parenting + communication tips. Save & share! #believeinyourchild #selfbelief #confidentkids #resilience #parentingtips #raisealeader #adnanbuildsleaders #growthmindset #messi #neverquit\n\nDon't just raise a child — raise a leader.",
+})
+
+
 def caption_for(slug):
     """SEO reel caption for a blog slug; falls back to a generic branded caption."""
     if slug in REEL_CAPTIONS:
