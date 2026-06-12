@@ -80,7 +80,8 @@
     "post_at": "2026-06-12T23:00:00+05:30",
     "yt_video_id": "Po-IByH0ATI",
     "yt_scheduled_at": "2026-06-11T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "help-your-child-speak-with-confidence": {
     "wp_post_id": 3704,
@@ -218,8 +219,8 @@
     "wp_post_id": 3827,
     "scheduled_dt": "2026-06-10T20:00:00+05:30",
     "post_at": "2026-06-10T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "4dejZa1Ckis",
     "yt_scheduled_at": "2026-06-10T14:30:00Z",
     "yt_v17_done": true,
@@ -255,7 +256,8 @@
     "ig_reel_done": false,
     "yt_video_id": "Wf-JrH64Zro",
     "yt_scheduled_at": "2026-06-12T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "why-boredom-is-good-for-kids": {
     "wp_post_id": 3858,
@@ -265,7 +267,8 @@
     "ig_reel_done": false,
     "yt_video_id": "Pa9zomM9Bik",
     "yt_scheduled_at": "2026-06-12T14:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "raise-an-opportunity-spotter": {
     "wp_post_id": 3863,
