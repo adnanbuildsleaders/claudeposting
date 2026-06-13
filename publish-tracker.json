@@ -230,8 +230,8 @@
     "wp_post_id": 3843,
     "scheduled_dt": "2026-06-11T14:00:00+05:30",
     "post_at": "2026-06-11T14:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "vnEahRuqFZc",
     "yt_scheduled_at": "2026-06-11T08:30:00Z",
     "yt_v17_done": true,
@@ -278,7 +278,8 @@
     "ig_reel_done": false,
     "yt_video_id": "A8fhc0FphE0",
     "yt_scheduled_at": "2026-06-13T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "public-speaking-for-kids": {
     "wp_post_id": 3868,
