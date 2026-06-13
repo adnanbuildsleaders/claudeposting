@@ -60,7 +60,9 @@
     "yt_video_id": "8kSSZDA0_08",
     "yt_scheduled_at": "2026-06-10T07:30:00Z",
     "yt_v17_done": true,
-    "live_detected": true
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "how-to-get-your-child-to-open-up": {
     "wp_post_id": 3702,
@@ -101,7 +103,8 @@
     "post_at": "2026-06-13T23:00:00+05:30",
     "yt_video_id": "XC5KLpTgoeY",
     "yt_scheduled_at": "2026-06-12T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "stop-rescuing-your-child": {
     "wp_post_id": 3706,
