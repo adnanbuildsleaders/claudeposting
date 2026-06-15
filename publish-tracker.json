@@ -147,7 +147,8 @@
     "post_at": "2026-06-15T23:00:00+05:30",
     "yt_video_id": "GXZWkBVou7c",
     "yt_scheduled_at": "2026-06-14T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "what-to-do-after-you-yell-at-your-child": {
     "wp_post_id": 3710,
@@ -291,8 +292,8 @@
     "wp_post_id": 3868,
     "scheduled_dt": "2026-06-13T20:00:00+05:30",
     "post_at": "2026-06-13T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "FbrXR9S3Uzo",
     "yt_scheduled_at": "2026-06-13T14:30:00Z",
     "yt_v17_done": true,
