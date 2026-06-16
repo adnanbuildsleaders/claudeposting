@@ -106,7 +106,9 @@
     "yt_video_id": "XC5KLpTgoeY",
     "yt_scheduled_at": "2026-06-12T07:30:00Z",
     "yt_v17_done": true,
-    "live_detected": true
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "stop-rescuing-your-child": {
     "wp_post_id": 3706,
@@ -168,7 +170,8 @@
     "post_at": "2026-06-16T23:00:00+05:30",
     "yt_video_id": "xFhLnr1tjjk",
     "yt_scheduled_at": "2026-06-15T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "let-your-child-fail-on-purpose": {
     "wp_post_id": 3712,
