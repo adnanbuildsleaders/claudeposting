@@ -129,7 +129,9 @@
     "yt_video_id": "IEbO3f5djLE",
     "yt_scheduled_at": "2026-06-13T07:30:00Z",
     "yt_v17_done": true,
-    "live_detected": true
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "ask-your-child-whats-your-plan": {
     "wp_post_id": 3708,
@@ -212,7 +214,8 @@
     "video_path": "D:\\Claude\\Kids\\Communication\\Kids-Communication-Scripts\\2026_05_30\\Blogs\\2026_05_30_Give your child $5 and a challenge\\2026_05_30_Reel Give your child $5 and a challenge.mp4",
     "yt_video_id": "vc1dmuPqc1M",
     "yt_scheduled_at": "2026-06-08T11:30:00Z",
-    "post_at": "2026-06-17T23:00:00+05:30"
+    "post_at": "2026-06-17T23:00:00+05:30",
+    "live_detected": true
   },
   "your-restless-child-is-gifted": {
     "wp_post_id": 3833,
