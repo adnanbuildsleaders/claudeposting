@@ -152,7 +152,9 @@
     "yt_video_id": "GXZWkBVou7c",
     "yt_scheduled_at": "2026-06-14T07:30:00Z",
     "yt_v17_done": true,
-    "live_detected": true
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "what-to-do-after-you-yell-at-your-child": {
     "wp_post_id": 3710,
