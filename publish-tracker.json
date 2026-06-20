@@ -37,7 +37,7 @@
     "video_path": "D:\\Claude\\Kids\\Communication\\Kids-Communication-Scripts\\2026_05_30\\Blogs\\2026_05_30_Never tell an angry child to calm down\\2026_05_30_Reel Never tell an angry child to calm down.mp4",
     "ig_video_done": true,
     "yt_video_id": "tnHaYIeFZ4A",
-    "ig_reel_done": false,
+    "ig_reel_done": true,
     "live_detected": true,
     "post_at": "2026-06-10T23:00:00+05:30"
   },
@@ -59,7 +59,10 @@
     "post_at": "2026-06-11T23:00:00+05:30",
     "yt_video_id": "8kSSZDA0_08",
     "yt_scheduled_at": "2026-06-10T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "how-to-get-your-child-to-open-up": {
     "wp_post_id": 3702,
@@ -79,7 +82,10 @@
     "post_at": "2026-06-12T23:00:00+05:30",
     "yt_video_id": "Po-IByH0ATI",
     "yt_scheduled_at": "2026-06-11T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "help-your-child-speak-with-confidence": {
     "wp_post_id": 3704,
@@ -99,7 +105,10 @@
     "post_at": "2026-06-13T23:00:00+05:30",
     "yt_video_id": "XC5KLpTgoeY",
     "yt_scheduled_at": "2026-06-12T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "stop-rescuing-your-child": {
     "wp_post_id": 3706,
@@ -119,7 +128,10 @@
     "post_at": "2026-06-14T23:00:00+05:30",
     "yt_video_id": "IEbO3f5djLE",
     "yt_scheduled_at": "2026-06-13T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "ask-your-child-whats-your-plan": {
     "wp_post_id": 3708,
@@ -139,7 +151,10 @@
     "post_at": "2026-06-15T23:00:00+05:30",
     "yt_video_id": "GXZWkBVou7c",
     "yt_scheduled_at": "2026-06-14T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "what-to-do-after-you-yell-at-your-child": {
     "wp_post_id": 3710,
@@ -159,7 +174,10 @@
     "post_at": "2026-06-16T23:00:00+05:30",
     "yt_video_id": "xFhLnr1tjjk",
     "yt_scheduled_at": "2026-06-15T07:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "let-your-child-fail-on-purpose": {
     "wp_post_id": 3712,
@@ -200,106 +218,119 @@
     "video_path": "D:\\Claude\\Kids\\Communication\\Kids-Communication-Scripts\\2026_05_30\\Blogs\\2026_05_30_Give your child $5 and a challenge\\2026_05_30_Reel Give your child $5 and a challenge.mp4",
     "yt_video_id": "vc1dmuPqc1M",
     "yt_scheduled_at": "2026-06-08T11:30:00Z",
-    "post_at": "2026-06-17T23:00:00+05:30"
+    "post_at": "2026-06-17T23:00:00+05:30",
+    "live_detected": true,
+    "ig_video_done": true,
+    "ig_reel_done": true
   },
   "your-restless-child-is-gifted": {
     "wp_post_id": 3833,
     "scheduled_dt": "2026-06-10T14:00:00+05:30",
     "post_at": "2026-06-10T14:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "yBI-u6O-gWg",
     "yt_scheduled_at": "2026-06-10T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "late-talking-child": {
     "wp_post_id": 3827,
     "scheduled_dt": "2026-06-10T20:00:00+05:30",
     "post_at": "2026-06-10T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "4dejZa1Ckis",
     "yt_scheduled_at": "2026-06-10T14:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "help-a-child-who-stammers": {
     "wp_post_id": 3843,
     "scheduled_dt": "2026-06-11T14:00:00+05:30",
     "post_at": "2026-06-11T14:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "vnEahRuqFZc",
     "yt_scheduled_at": "2026-06-11T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "dyslexia-is-not-a-weakness": {
     "wp_post_id": 3848,
     "scheduled_dt": "2026-06-11T20:00:00+05:30",
     "post_at": "2026-06-11T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "45bsinStmG0",
     "yt_scheduled_at": "2026-06-11T14:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "encourage-curiosity-in-kids": {
     "wp_post_id": 3853,
     "scheduled_dt": "2026-06-12T14:00:00+05:30",
     "post_at": "2026-06-12T14:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "Wf-JrH64Zro",
     "yt_scheduled_at": "2026-06-12T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "why-boredom-is-good-for-kids": {
     "wp_post_id": 3858,
     "scheduled_dt": "2026-06-12T20:00:00+05:30",
     "post_at": "2026-06-12T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "Pa9zomM9Bik",
     "yt_scheduled_at": "2026-06-12T14:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "raise-an-opportunity-spotter": {
     "wp_post_id": 3863,
     "scheduled_dt": "2026-06-13T14:00:00+05:30",
     "post_at": "2026-06-13T14:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "A8fhc0FphE0",
     "yt_scheduled_at": "2026-06-13T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "public-speaking-for-kids": {
     "wp_post_id": 3868,
     "scheduled_dt": "2026-06-13T20:00:00+05:30",
     "post_at": "2026-06-13T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "FbrXR9S3Uzo",
     "yt_scheduled_at": "2026-06-13T14:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "raise-a-child-who-loves-reading": {
     "wp_post_id": 3873,
     "scheduled_dt": "2026-06-14T14:00:00+05:30",
     "post_at": "2026-06-14T14:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "wRfZMlA2YIw",
     "yt_scheduled_at": "2026-06-14T08:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   },
   "believe-in-your-child": {
     "wp_post_id": 3878,
     "scheduled_dt": "2026-06-14T20:00:00+05:30",
     "post_at": "2026-06-14T20:00:00+05:30",
-    "ig_video_done": false,
-    "ig_reel_done": false,
+    "ig_video_done": true,
+    "ig_reel_done": true,
     "yt_video_id": "hI4Zy9nqDj4",
     "yt_scheduled_at": "2026-06-14T14:30:00Z",
-    "yt_v17_done": true
+    "yt_v17_done": true,
+    "live_detected": true
   }
 }
