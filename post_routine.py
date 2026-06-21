@@ -17,7 +17,7 @@ import ig_story as S
 BASE  = os.path.dirname(os.path.abspath(__file__))
 TRK   = os.path.join(BASE, "publish-tracker.json")
 IST   = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
-KINDS = ["ig-video", "ig-reel"]   # cloud does IG only; YT = pre-scheduled
+KINDS = ["ig-video"]   # POLICY (2026-06-12): Instagram STORY ONLY. No feed Reel, no YouTube Short.
 
 # GitHub raw base URL — assets/<slug>.mp4 are committed here and served publicly
 GITHUB_RAW = "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/assets"
@@ -61,8 +61,7 @@ def due_actions(tr, now=None):
         e["live_detected"] = True
         if not e.get("ig_video_done"):
             out.append((slug, "ig-video"))
-        if not e.get("ig_reel_done"):
-            out.append((slug, "ig-reel"))
+        # ig-reel intentionally removed — Stories only (policy 2026-06-12).
     out.sort(key=lambda a: KINDS.index(a[1]))
     return out
 
