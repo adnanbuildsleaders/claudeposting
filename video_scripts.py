@@ -198,12 +198,45 @@ REEL_CAPTIONS.update({
 })
 
 
+# ---- MANDATORY end-of-reel engagement question (Change 2: #1 fix for the 0.62% engagement rate). ----
+# Each ties to the SPECIFIC scenario/reference in that blog's script and asks the parent to comment.
+# caption_for() injects it into every caption right before the Save/Follow CTA — non-negotiable.
+_QGENERIC = "Does this sound like YOUR child? Tell me in the comments \U0001F447"
+QUESTIONS = {
+ "how-to-praise-your-child": "When your child nails something, what's the FIRST thing you say? Tell me below \U0001F447",
+ "why-calm-down-doesnt-work": "What's the one phrase that makes your child's meltdown WORSE? Drop it below \U0001F447",
+ "how-to-get-kids-to-cooperate-choices": "What's the daily battle in your house — shoes, homework or bedtime? \U0001F447",
+ "how-to-get-your-child-to-open-up": "Does your child shut down when you ask 'how was your day?' Comment YES \U0001F447",
+ "help-your-child-speak-with-confidence": "Does your child rush their words when they're nervous? Tell me \U0001F447",
+ "stop-rescuing-your-child": "Be honest — do you jump in to fix things for your child? No judgment \U0001F447",
+ "ask-your-child-whats-your-plan": "When your child hits a problem, do they say 'I can't' or 'let me try'? \U0001F447",
+ "what-to-do-after-you-yell-at-your-child": "We all lose it sometimes. What do you do AFTER you yell? \U0001F447",
+ "let-your-child-fail-on-purpose": "What's one thing you've stopped rescuing your child from? \U0001F447",
+ "give-your-child-5-dollars-and-a-challenge": "Would you hand your child $5 and a challenge? Comment YES or NOT YET \U0001F447",
+ "late-talking-child": "Is your child a late talker? How old are they — tell me below \U0001F447",
+ "your-restless-child-is-gifted": "Does your child NEVER sit still? Comment '\U0001F525' if that's your kid \U0001F447",
+ "help-a-child-who-stammers": "Does your child stumble on words when excited or nervous? Tell me \U0001F447",
+ "dyslexia-is-not-a-weakness": "Has school ever made your child feel 'not smart enough'? \U0001F447",
+ "encourage-curiosity-in-kids": "What's the toughest 'why?' your child has ever asked you? \U0001F447",
+ "why-boredom-is-good-for-kids": "What does your child say the SECOND they're bored? Tell me \U0001F447",
+ "raise-an-opportunity-spotter": "Has your child ever tried to 'sell' you something? Tell me their idea \U0001F447",
+ "public-speaking-for-kids": "Does your child freeze when all eyes are on them? Comment if yes \U0001F447",
+ "raise-a-child-who-loves-reading": "Does your child love books or avoid them? Tell me which \U0001F447",
+ "believe-in-your-child": "Has anyone ever called your child 'too small' or 'too quiet'? \U0001F447",
+}
+
+
 def caption_for(slug):
-    """SEO reel caption for a blog slug; falls back to a generic branded caption."""
+    """SEO reel caption for a blog slug + a MANDATORY topic-specific engagement question, injected
+    right before the Save/Follow CTA. Falls back to a generic branded caption."""
     if slug in REEL_CAPTIONS:
-        return REEL_CAPTIONS[slug]
-    m = SCRIPTS.get(slug, {})
-    lead = (m.get("script", {}).get("cta_line") or "New on the blog.")
-    return _rc(lead, "Read the full guide on habbinson.com/blog.",
-               ["parenting","parentingtips","raisingleaders","childpsychology","positiveparenting",
-                "communicationskills","confidentkids","gentleparenting","momlife","dadlife","raisealeader"])
+        base = REEL_CAPTIONS[slug]
+    else:
+        m = SCRIPTS.get(slug, {})
+        lead = (m.get("script", {}).get("cta_line") or "New on the blog.")
+        base = _rc(lead, "Read the full guide on habbinson.com/blog.",
+                   ["parenting","parentingtips","raisingleaders","childpsychology","positiveparenting",
+                    "communicationskills","confidentkids","gentleparenting","momlife","dadlife","raisealeader"])
+    qline = "\n\n\U0001F4AC " + QUESTIONS.get(slug, _QGENERIC)        # speech-balloon + the question
+    marker = "\n\n\U0001F4BE Save"                                    # inject before the Save CTA
+    return base.replace(marker, qline + marker, 1) if marker in base else base + qline

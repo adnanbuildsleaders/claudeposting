@@ -8,18 +8,27 @@ State (publish-tracker.json) is committed back by the workflow after each run.
 
 Videos are served from raw.githubusercontent.com (assets/<slug>.mp4 committed to this repo).
 The repo must be PUBLIC so Instagram's servers can fetch the raw video URL."""
-import os, time
+import os, time, datetime
 import post_routine as R
 import ig_story as S
+
+IST = datetime.timezone(datetime.timedelta(hours=5, minutes=30))
+TODAY = datetime.datetime.now(IST).strftime("%Y-%m-%d")
 
 tr = R.load()
 S.maybe_refresh()
 
 acts = R.due_actions(tr)
 
-# Anti-flood cap: post at most ONE blog per run (its Story + Reel), oldest slot first.
-# The */30 cron then drips one blog every ~30 min instead of dumping a whole backlog at
-# once. Idempotent + self-correcting: even if cron clusters, each run clears just one blog.
+# CHANGE 3 — ONE POST PER CALENDAR DAY. A second same-day IG post cannibalises the first's reach
+# (~40% less, per the analytics audit). If we've already posted today, hold the rest for tomorrow.
+meta = tr.get("_meta", {})
+if acts and meta.get("last_ig_post_date") == TODAY:
+    print("1/day cap: already posted on %s -> skipping until tomorrow." % TODAY, flush=True)
+    acts = []
+
+# Anti-flood: of whatever is still due, post only the OLDEST single blog this run; the next day's
+# run takes the next one. Idempotent + self-correcting even if the cron clusters.
 if acts:
     def _when(slug):
         e = tr.get(slug, {})
@@ -27,16 +36,23 @@ if acts:
     oldest = min({s for s, _ in acts}, key=_when)
     acts = [(s, k) for (s, k) in acts if s == oldest]
 
-print("due IG actions (capped to 1 blog/run): %d" % len(acts), flush=True)
+print("due IG actions (<=1 blog, <=1/day): %d" % len(acts), flush=True)
 
+posted = False
 for i, (slug, kind) in enumerate(acts):
     ok, info = R.run_action(slug, kind, tr)
+    if ok:
+        posted = True
     R.save(tr)
     line = "[%d/%d] %-9s %-36s -> %s" % (
         i + 1, len(acts), kind, slug, "OK" if ok else "FAIL " + str(info)[:300])
     print(line.encode("ascii", "replace").decode(), flush=True)
     if i < len(acts) - 1:
         time.sleep(8)
+
+if posted:                                  # record the day so no 2nd post fires before tomorrow
+    meta["last_ig_post_date"] = TODAY
+    tr["_meta"] = meta
 
 R.save(tr)
 print("cloud IG pass done", flush=True)
