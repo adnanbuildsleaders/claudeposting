@@ -22,6 +22,25 @@ KINDS = ["ig-video"]   # POLICY (2026-06-12): Instagram STORY ONLY. No feed Reel
 # GitHub raw base URL — assets/<slug>.mp4 are committed here and served publicly
 GITHUB_RAW = "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/assets"
 
+# Sanity public CDN (tokenless read) — confirm a blog is ACTUALLY published before its Story posts.
+UTC = datetime.timezone.utc
+SANITY_QUERY = "https://geicn1tr.apicdn.sanity.io/v2024-01-01/data/query/production"
+
+
+def sanity_live(slug):
+    """True only once the Sanity blog's publishedAt has passed — i.e. the blog is now live on the
+    site. This ties each Instagram Story to its blog actually publishing (not just a timer)."""
+    import requests
+    try:
+        q = '*[_id=="post-%s"][0].publishedAt' % slug
+        pub = requests.get(SANITY_QUERY, params={"query": q}, timeout=20).json().get("result")
+        if not pub:
+            return False
+        return datetime.datetime.fromisoformat(pub.replace("Z", "+00:00")) <= datetime.datetime.now(UTC)
+    except Exception as ex:
+        print("sanity_live check failed for %s: %s" % (slug, ex), flush=True)
+        return False
+
 
 def _now(): return datetime.datetime.now(IST)
 def load(): return json.load(open(TRK, encoding="utf-8"))
@@ -56,7 +75,11 @@ def due_actions(tr, now=None):
             continue
         if now < datetime.datetime.fromisoformat(when):
             continue
-        if not wp_live(e.get("wp_post_id")):
+        # liveness gate: Sanity blogs must be ACTUALLY published; legacy WP blogs trust the scheduler
+        if e.get("sanity_id"):
+            if not sanity_live(slug):
+                continue
+        elif not wp_live(e.get("wp_post_id")):
             continue
         e["live_detected"] = True
         if not e.get("ig_video_done"):
