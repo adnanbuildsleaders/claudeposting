@@ -48,6 +48,6 @@ jobs:
         run: |
           git config user.name "habbinson-bot"
           git config user.email "habbinson-bot@users.noreply.github.com"
-          git add publish-tracker.json reels.json
-          git commit -m "tracker update [skip ci]" || echo "no changes"
+          git add -A
+          git commit -m "tracker update + remove posted videos [skip ci]" || echo "no changes"
           git push || echo "nothing to push"

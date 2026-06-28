@@ -66,13 +66,27 @@ def due_actions(tr, now=None):
     return out
 
 
+def _delete_asset(slug, e):
+    """PRIVACY: once IG has ingested + published the video, remove it from the PUBLIC repo so it
+    no longer sits there for anyone to download. The workflow commits this deletion (git add -A)."""
+    p = os.path.join(BASE, "assets", slug + ".mp4")
+    if os.path.exists(p):
+        try:
+            os.remove(p); e["asset_deleted"] = True
+            print("deleted public asset assets/%s.mp4" % slug, flush=True)
+        except Exception as ex:
+            print("asset delete failed for %s: %s" % (slug, ex), flush=True)
+
+
 def run_action(slug, kind, tr):
     """Execute one IG action; mutates tr[slug]; returns (ok, info)."""
     e  = tr[slug]
     vp = ensure_video(slug, e)
     if kind == "ig-video":
         r = S.post_video_story(vp, publish=True)
-        if r["ok"]: e["ig_video_done"] = True
+        if r["ok"]:
+            e["ig_video_done"] = True
+            _delete_asset(slug, e)             # remove the now-published video from the public repo
         return r["ok"], r
     if kind == "ig-reel":
         r = S.post_reel(vp, VS.caption_for(slug), publish=True)
