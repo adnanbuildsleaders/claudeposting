@@ -332,5 +332,95 @@
     "yt_scheduled_at": "2026-06-14T14:30:00Z",
     "yt_v17_done": true,
     "live_detected": true
+  },
+  "protect-your-childs-imagination": {
+    "wp_post_id": "post-protect-your-childs-imagination",
+    "sanity_id": "post-protect-your-childs-imagination",
+    "scheduled_dt": "2026-06-28T20:00:00+05:30",
+    "post_at": "2026-06-28T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "sky",
+    "story_when": "2026-06-28T20:00:00+05:30"
+  },
+  "every-child-learns-differently": {
+    "wp_post_id": "post-every-child-learns-differently",
+    "sanity_id": "post-every-child-learns-differently",
+    "scheduled_dt": "2026-06-29T20:00:00+05:30",
+    "post_at": "2026-06-29T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "sunny",
+    "story_when": "2026-06-29T20:00:00+05:30"
+  },
+  "dreams-need-hard-work": {
+    "wp_post_id": "post-dreams-need-hard-work",
+    "sanity_id": "post-dreams-need-hard-work",
+    "scheduled_dt": "2026-06-30T20:00:00+05:30",
+    "post_at": "2026-06-30T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "grape",
+    "story_when": "2026-06-30T20:00:00+05:30"
+  },
+  "help-your-child-find-their-voice": {
+    "wp_post_id": "post-help-your-child-find-their-voice",
+    "sanity_id": "post-help-your-child-find-their-voice",
+    "scheduled_dt": "2026-07-01T20:00:00+05:30",
+    "post_at": "2026-07-01T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "mint",
+    "story_when": "2026-07-01T20:00:00+05:30"
+  },
+  "why-practice-beats-talent": {
+    "wp_post_id": "post-why-practice-beats-talent",
+    "sanity_id": "post-why-practice-beats-talent",
+    "scheduled_dt": "2026-07-02T20:00:00+05:30",
+    "post_at": "2026-07-02T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "lime",
+    "story_when": "2026-07-02T20:00:00+05:30"
+  },
+  "dont-write-off-a-late-bloomer": {
+    "wp_post_id": "post-dont-write-off-a-late-bloomer",
+    "sanity_id": "post-dont-write-off-a-late-bloomer",
+    "scheduled_dt": "2026-07-03T20:00:00+05:30",
+    "post_at": "2026-07-03T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "sky",
+    "story_when": "2026-07-03T20:00:00+05:30"
+  },
+  "raise-a-child-who-dares": {
+    "wp_post_id": "post-raise-a-child-who-dares",
+    "sanity_id": "post-raise-a-child-who-dares",
+    "scheduled_dt": "2026-07-04T20:00:00+05:30",
+    "post_at": "2026-07-04T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "coral",
+    "story_when": "2026-07-04T20:00:00+05:30"
+  },
+  "raise-a-resourceful-child": {
+    "wp_post_id": "post-raise-a-resourceful-child",
+    "sanity_id": "post-raise-a-resourceful-child",
+    "scheduled_dt": "2026-07-05T20:00:00+05:30",
+    "post_at": "2026-07-05T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "mint",
+    "story_when": "2026-07-05T20:00:00+05:30"
+  },
+  "quiet-kids-can-lead-too": {
+    "wp_post_id": "post-quiet-kids-can-lead-too",
+    "sanity_id": "post-quiet-kids-can-lead-too",
+    "scheduled_dt": "2026-07-06T20:00:00+05:30",
+    "post_at": "2026-07-06T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "grape",
+    "story_when": "2026-07-06T20:00:00+05:30"
+  },
+  "teach-your-child-to-speak-up": {
+    "wp_post_id": "post-teach-your-child-to-speak-up",
+    "sanity_id": "post-teach-your-child-to-speak-up",
+    "scheduled_dt": "2026-07-07T20:00:00+05:30",
+    "post_at": "2026-07-07T20:00:00+05:30",
+    "ig_video_done": false,
+    "poster_palette": "coral",
+    "story_when": "2026-07-07T20:00:00+05:30"
   }
 }

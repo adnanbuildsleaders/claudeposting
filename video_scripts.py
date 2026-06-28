@@ -240,3 +240,19 @@ def caption_for(slug):
     qline = "\n\n\U0001F4AC " + QUESTIONS.get(slug, _QGENERIC)        # speech-balloon + the question
     marker = "\n\n\U0001F4BE Save"                                    # inject before the Save CTA
     return base.replace(marker, qline + marker, 1) if marker in base else base + qline
+
+
+# === JUN28 STORY REGISTRATION ===
+for _s,_p,_t in [
+  ("protect-your-childs-imagination","sky","Protect Your Childs Imagination"),
+  ("every-child-learns-differently","sunny","Every Child Learns Differently"),
+  ("dreams-need-hard-work","grape","Dreams Need Hard Work"),
+  ("help-your-child-find-their-voice","mint","Help Your Child Find Their Voice"),
+  ("why-practice-beats-talent","lime","Why Practice Beats Talent"),
+  ("dont-write-off-a-late-bloomer","sky","Dont Write Off A Late Bloomer"),
+  ("raise-a-child-who-dares","coral","Raise A Child Who Dares"),
+  ("raise-a-resourceful-child","mint","Raise A Resourceful Child"),
+  ("quiet-kids-can-lead-too","grape","Quiet Kids Can Lead Too"),
+  ("teach-your-child-to-speak-up","coral","Teach Your Child To Speak Up"),
+]:
+    SCRIPTS.setdefault(_s, {"palette": _p, "final_slug": _s, "title": _t, "script": ""})

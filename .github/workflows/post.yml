@@ -38,13 +38,16 @@ jobs:
         run: |
           printf '%s' "$IG_CONFIG" > .ig_config.json
 
-      - name: Post due IG outputs
+      - name: Post due IG outputs (blog Stories)
         run: python cloud_post.py
 
-      - name: Commit updated tracker
+      - name: Post due IG Reels (edited reels)
+        run: python cloud_reels.py
+
+      - name: Commit updated trackers
         run: |
           git config user.name "habbinson-bot"
           git config user.email "habbinson-bot@users.noreply.github.com"
-          git add publish-tracker.json
+          git add publish-tracker.json reels.json
           git commit -m "tracker update [skip ci]" || echo "no changes"
           git push || echo "nothing to push"

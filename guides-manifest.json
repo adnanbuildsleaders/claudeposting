@@ -1,6 +1,86 @@
 {
   "guides": [
     {
+      "slug": "dont-write-off-a-late-bloomer",
+      "title": "What to do when your child falls behind",
+      "summary": "Is your child a late bloomer? Don't write them off. See how an average student named Stephen Hawking changed science, plus 5 ways to back a child who's blooming slowly.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/dont-write-off-a-late-bloomer.pdf"
+    },
+    {
+      "slug": "protect-your-childs-imagination",
+      "title": "How to protect your child's imagination",
+      "summary": "Your child's imagination is their superpower. Learn why it matters, what kills it, and 5 simple ways to protect it — plus the Disney story every parent should know.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/protect-your-childs-imagination.pdf"
+    },
+    {
+      "slug": "every-child-learns-differently",
+      "title": "What to do when school labels your child",
+      "summary": "Every child learns differently — and school doesn't always see it. Learn why “slow” labels are so often wrong, and 5 ways to teach to your child's real strengths.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/every-child-learns-differently.pdf"
+    },
+    {
+      "slug": "dreams-need-hard-work",
+      "title": "How to teach your child that dreams take work",
+      "summary": "Dreams need hard work — and kids need to learn it early. See how A.P.J. Abdul Kalam rose from selling newspapers, plus 5 ways to pair your child's big dreams with daily effort.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/dreams-need-hard-work.pdf"
+    },
+    {
+      "slug": "help-your-child-find-their-voice",
+      "title": "How to help a quiet child find their voice",
+      "summary": "Want to help your child find their voice? See how Helen Keller learned to communicate against all odds, plus 5 gentle ways to help a quiet child speak up with confidence.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/help-your-child-find-their-voice.pdf"
+    },
+    {
+      "slug": "why-practice-beats-talent",
+      "title": "Why practice beats talent - and how to build it",
+      "summary": "Practice beats talent far more often than parents think. See how Serena Williams trained on public courts, plus 5 ways to help your child build a practice habit that wins.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/why-practice-beats-talent.pdf"
+    },
+    {
+      "slug": "raise-a-child-who-dares",
+      "title": "How to raise a child who dares",
+      "summary": "Want to raise a child who dares? See how Mary Kom boxed past every “you can't,” plus 5 ways to grow a brave child who takes on challenges instead of shrinking from them.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/raise-a-child-who-dares.pdf"
+    },
+    {
+      "slug": "raise-a-resourceful-child",
+      "title": "How to raise a resourceful child",
+      "summary": "More gadgets won't help — but a resourceful child will thrive anywhere. See how Sundar Pichai grew up with little, plus 5 ways to raise a child who solves their own problems.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/raise-a-resourceful-child.pdf"
+    },
+    {
+      "slug": "quiet-kids-can-lead-too",
+      "title": "5 ways to grow a quiet child's leadership",
+      "summary": "Quiet kids can lead too — louder isn't better. See how soft-spoken Ratan Tata led a global empire, plus 5 ways to grow a shy child's quiet strength into real leadership.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/quiet-kids-can-lead-too.pdf"
+    },
+    {
+      "slug": "teach-your-child-to-speak-up",
+      "title": "How to teach your child to speak up",
+      "summary": "Want to teach your child to speak up? See how Malala raised her voice at 11, plus 5 ways to help your child share opinions, set boundaries, and stand up for what's right.",
+      "category": "Parent Guide",
+      "date": "2026-06-28",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/teach-your-child-to-speak-up.pdf"
+    },
+    {
       "slug": "late-talking-child",
       "title": "5 simple ways to grow a late talking child's words",
       "summary": "Worried about a late talking child? Learn what's normal, the milestones to watch, and how to gently grow your child's words — plus why even Einstein spoke late.",
@@ -79,6 +159,86 @@
       "category": "Parent Guide",
       "date": "2026-06-08",
       "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/believe-in-your-child.pdf"
+    },
+    {
+      "slug": "how-to-praise-your-child",
+      "title": "What to say instead: 7 phrases that build a growth mindset",
+      "summary": "Praising your child for being smart can backfire. Learn how to praise your child's effort the right way to build confidence, grit, and a growth mindset.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/how-to-praise-your-child.pdf"
+    },
+    {
+      "slug": "why-calm-down-doesnt-work",
+      "title": "3 things to say instead of 'calm down'",
+      "summary": "Telling an angry child to calm down rarely works. Learn how to calm an angry child with co-regulation, naming feelings, and three phrases that actually settle big emotions.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/why-calm-down-doesnt-work.pdf"
+    },
+    {
+      "slug": "how-to-get-kids-to-cooperate-choices",
+      "title": "How to give choices the right way",
+      "summary": "Want to get kids to cooperate without yelling? Give two choices instead of one order. Learn how offering choices ends power struggles and builds decision-making skills.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/how-to-get-kids-to-cooperate-choices.pdf"
+    },
+    {
+      "slug": "how-to-get-your-child-to-open-up",
+      "title": "3 mistakes that close the door",
+      "summary": "If your child won't open up, stop sitting across from them. Learn how to get your child to talk to you using side-by-side connection, the car, and questions that actually work.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/how-to-get-your-child-to-open-up.pdf"
+    },
+    {
+      "slug": "help-your-child-speak-with-confidence",
+      "title": "How to teach the 2-second pause",
+      "summary": "Want your child to speak with confidence? Teach the 2-second pause. Learn how a short, calm pause makes kids sound clear, confident, and in control when they talk.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/help-your-child-speak-with-confidence.pdf"
+    },
+    {
+      "slug": "stop-rescuing-your-child",
+      "title": "3 ways to start stepping back this week",
+      "summary": "Always stepping in? Learn how to stop rescuing your child so they build resilience, problem-solving, and grit. When to help, when to wait, and why struggle matters.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/stop-rescuing-your-child.pdf"
+    },
+    {
+      "slug": "ask-your-child-whats-your-plan",
+      "title": "3 ways to practice this week",
+      "summary": "Stop handing kids the answer. Learn how asking 'what's your plan?' builds problem-solving, initiative, and leadership — and raises a child who thinks for themselves.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/ask-your-child-whats-your-plan.pdf"
+    },
+    {
+      "slug": "what-to-do-after-you-yell-at-your-child",
+      "title": "How to repair, step by step",
+      "summary": "Yelled at your kid and feel awful? What you do next matters more than the slip. Learn how to repair after yelling and turn the moment into trust and security.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/what-to-do-after-you-yell-at-your-child.pdf"
+    },
+    {
+      "slug": "let-your-child-fail-on-purpose",
+      "title": "How to let your child fail safely",
+      "summary": "Letting your child fail feels wrong, but it's how grit is built. Learn why safe, small failures grow resilience, problem-solving, and confidence in kids.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/let-your-child-fail-on-purpose.pdf"
+    },
+    {
+      "slug": "give-your-child-5-dollars-and-a-challenge",
+      "title": "3 rules to keep it fun",
+      "summary": "Want to raise an entrepreneurial kid? Give your child $5 and a challenge. Learn how a tiny money mission builds initiative, problem-solving, and real-world confidence.",
+      "category": "Parent Guide",
+      "date": "2026-05-30",
+      "url": "https://raw.githubusercontent.com/adnanbuildsleaders/claudeposting/main/pdfs/give-your-child-5-dollars-and-a-challenge.pdf"
     }
   ]
 }
