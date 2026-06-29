@@ -349,9 +349,11 @@
     "sanity_id": "post-every-child-learns-differently",
     "scheduled_dt": "2026-06-29T20:00:00+05:30",
     "post_at": "2026-06-29T20:00:00+05:30",
-    "ig_video_done": false,
+    "ig_video_done": true,
     "poster_palette": "sunny",
-    "story_when": "2026-06-29T20:00:00+05:30"
+    "story_when": "2026-06-29T20:00:00+05:30",
+    "live_detected": true,
+    "asset_deleted": true
   },
   "dreams-need-hard-work": {
     "wp_post_id": "post-dreams-need-hard-work",
@@ -426,6 +428,6 @@
     "story_when": "2026-07-07T20:00:00+05:30"
   },
   "_meta": {
-    "last_ig_post_date": "2026-06-28"
+    "last_ig_post_date": "2026-06-29"
   }
 }
